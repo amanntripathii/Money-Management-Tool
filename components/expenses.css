@@ -1,0 +1,69 @@
+.expenses-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.expenses-summary-card {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  color: white;
+}
+
+.expenses-summary-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.expenses-summary-amount {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.expenses-summary-count {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.category-card {
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.category-name {
+  font-weight: 500;
+  color: #111827;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.category-amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc2626;
+  margin-bottom: 0.25rem;
+}
+
+.category-percentage {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .expenses-summary-amount {
+    font-size: 1.5rem;
+  }
+
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}

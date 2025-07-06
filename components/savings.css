@@ -1,0 +1,213 @@
+.savings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.savings-summary-card {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  color: white;
+}
+
+.savings-summary-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.savings-summary-amount {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+.savings-summary-target {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.75rem;
+}
+
+.savings-summary-percentage {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.progress-fill.white {
+  background-color: white;
+}
+
+.savings-goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.savings-goal-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  padding: 1.5rem;
+}
+
+.savings-goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.savings-goal-info {
+  flex: 1;
+}
+
+.savings-goal-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.savings-goal-description {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.savings-goal-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: color 0.2s;
+}
+
+.action-button:hover {
+  color: #6b7280;
+}
+
+.action-button.delete:hover {
+  color: #dc2626;
+}
+
+.savings-goal-progress {
+  margin-bottom: 1rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.progress-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.progress-amounts {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 0.25rem;
+}
+
+.progress-fill.green {
+  background-color: #10b981;
+}
+
+.progress-fill.purple {
+  background-color: #7c3aed;
+}
+
+.progress-percentage {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.savings-goal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.target-date {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.add-money-button {
+  background-color: #ede9fe;
+  color: #7c3aed;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.add-money-button:hover {
+  background-color: #ddd6fe;
+}
+
+.empty-state-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  padding: 3rem;
+  text-align: center;
+}
+
+.empty-state-text {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.empty-state-button {
+  color: #7c3aed;
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.empty-state-button:hover {
+  color: #6d28d9;
+}
+
+@media (max-width: 768px) {
+  .savings-summary-amount {
+    font-size: 1.5rem;
+  }
+
+  .savings-goals-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .savings-goal-footer {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+}

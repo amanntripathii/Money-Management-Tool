@@ -1,0 +1,128 @@
+.reports-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.reports-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-divider {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 0.5rem 0;
+}
+
+.category-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.category-breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.category-breakdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-breakdown-name {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.category-breakdown-values {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.category-breakdown-percentage {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.progress-fill.red {
+  background-color: #ef4444;
+}
+
+.monthly-trends-table {
+  overflow-x: auto;
+}
+
+.trends-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trends-table th,
+.trends-table td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.trends-table th {
+  font-weight: 500;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.trends-table td:not(:first-child) {
+  text-align: right;
+}
+
+.empty-state-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  padding: 3rem;
+  text-align: center;
+}
+
+.empty-state-text {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state-subtext {
+  color: #9ca3af;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  .reports-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-breakdown-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .trends-table {
+    font-size: 0.875rem;
+  }
+}
